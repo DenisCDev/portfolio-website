@@ -5,16 +5,38 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
+    title: "Linguagens",
     id: "skills",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Frameworks",
+    id: "skills-2",
     content: (
       <ul className="list-disc pl-2">
         <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
         <li>React</li>
+        <li>Next.js</li>
+        <li>Spring Boot</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Banco de Dados",
+    id: "skills-3",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>MySQL</li>
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
       </ul>
     ),
   },
@@ -23,8 +45,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Universidade Cruzeiro do SUl Virtual</li>
       </ul>
     ),
   },
@@ -33,8 +54,10 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Google Cloud Essentials - Google</li>
+        <li>Design Thinking, UX e Metodologias Ágeis - Nubank</li>
+        <li>Discover Trilha Conectar - Rocketseat</li>
+        <li>Desenvolvedor Back-end  - Tech4me</li>
       </ul>
     ),
   },
@@ -55,14 +78,9 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/images/about-image.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Sobre mim</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          Sou um desenvolvedor web apaixonado pela criação de soluções inovadoras. Com uma formação em Ciência da Computação em andamento, busco constantemente aprimorar minhas habilidades técnicas e aplicá-las em projetos desafiadores. Tenho experiência em desenvolvimento full-stack, com um histórico de modernização de sistemas legados e criação de soluções eficazes. Sou um comunicador eficiente e trabalho bem em equipes colaborativas. Estou sempre disposto a aprender e aberto a novos desafios.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -70,21 +88,35 @@ const AboutSection = () => {
               active={tab === "skills"}
             >
               {" "}
-              Skills{" "}
+              Linguagens{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("skills-2")}
+              active={tab === "skills-2"}
+            >
+              {" "}
+              Frameworks{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("skills-3")}
+              active={tab === "skills-3"}
+            >
+              {" "}
+              Banco de Dados{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
-              Education{" "}
+              Educação{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
-              Certifications{" "}
+              Certificados{" "}
             </TabButton>
           </div>
           <div className="mt-8">
