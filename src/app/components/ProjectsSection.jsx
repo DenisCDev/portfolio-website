@@ -19,7 +19,7 @@ const projectsData = [
     title: "Verve",
     description: "Site de café tematico de jazz",
     image: "/images/projects/3.png",
-    tag: ["Todos"],
+    tag: ["Todos", "Web"],
     gitUrl: "https://verve-cafe.netlify.app/",
     previewUrl: "https://verve-cafe.netlify.app/",
   },
@@ -28,9 +28,18 @@ const projectsData = [
     title: "API Node Express",
     description: "API de registro de personagens RPG",
     image: "/images/projects/4.png",
-    tag: ["Todos"],
+    tag: ["Todos", "API"],
     gitUrl: "https://github.com/DenisCDev/nodejsexpress-api",
     previewUrl: "https://github.com/DenisCDev/nodejsexpress-api",
+  },
+    {
+    id: 4,
+    title: "API Java Spring Booot",
+    description: "API de registro de computadores com especificação de peças",
+    image: "/images/projects/4.png",
+    tag: ["Todos", "API"],
+    gitUrl: "https://github.com/DenisCDev/API-RegistroDeComputadores",
+    previewUrl: "https://github.com/DenisCDev/API-RegistroDeComputadores",
   },
 ];
 
@@ -70,8 +79,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Java"
-          isSelected={tag === "Java"}
+          name="API"
+          isSelected={tag === "API"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
