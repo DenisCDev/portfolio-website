@@ -1,7 +1,6 @@
-"use client";
+"use client"
 import React, { useState } from "react";
-import GithubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import Link from "next/link";
 import Image from "next/image";
 
@@ -18,15 +17,11 @@ const EmailSection = () => {
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
 
-
     const options = {
-      
       method: "POST",
-      
       headers: {
         "Content-Type": "application/json",
       },
-      
       body: JSONdata,
     };
 
@@ -50,15 +45,17 @@ const EmailSection = () => {
           Fale comigo
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          {" "}
           Estou sempre aberto a conversar, entre em contato por essa área para nos falarmos
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/DenisCDev" target="_blank">
-            <Image src={GithubIcon} alt="Github Icon" />
+              <FaGithub size={40} className="text-white hover:text-yellow-500" />
           </Link>
           <Link href="https://www.linkedin.com/in/denis-scarabelli/" target="_blank">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+              <FaLinkedin size={40} className="text-white hover:text-yellow-500" />
+          </Link>
+          <Link href="https://www.instagram.com/denis.desenvolvedor" target="_blank">
+              <FaInstagram size={40} className="text-white hover:text-yellow-500" />
           </Link>
         </div>
       </div>

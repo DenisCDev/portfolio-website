@@ -54,6 +54,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
+        <li>Fundamentos do design da experiência do usuário UX - Google</li>
         <li>Google Cloud Essentials - Google</li>
         <li>Design Thinking, UX e Metodologias Ágeis - Nubank</li>
         <li>Discover Trilha Conectar - Rocketseat</li>

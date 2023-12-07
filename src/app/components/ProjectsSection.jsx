@@ -9,19 +9,28 @@ const projectsData = [
     id: 1,
     title: "IntLab",
     description: "Site de estúdio de design",
-    image: "/images/projects/1.png",
+    image: "/images/projects/2.png",
     tag: ["Todos", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://intlabs.com.br/",
     previewUrl: "https://intlabs.com.br/",
   },
   {
     id: 2,
-    title: "PLACEHOLDER",
-    description: "Project 4 description",
+    title: "Verve",
+    description: "Site de café tematico de jazz",
+    image: "/images/projects/3.png",
+    tag: ["Todos"],
+    gitUrl: "https://verve-cafe.netlify.app/",
+    previewUrl: "https://verve-cafe.netlify.app/",
+  },
+  {
+    id: 3,
+    title: "API Node Express",
+    description: "API de registro de personagens RPG",
     image: "/images/projects/4.png",
-    tag: ["Todos", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["Todos"],
+    gitUrl: "https://github.com/DenisCDev/nodejsexpress-api",
+    previewUrl: "https://github.com/DenisCDev/nodejsexpress-api",
   },
 ];
 
@@ -61,8 +70,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Java"
+          isSelected={tag === "Java"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
