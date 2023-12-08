@@ -36,7 +36,7 @@ const projectsData = [
     id: 4,
     title: "API Java Spring Booot",
     description: "API de registro de computadores com especificação de peças",
-    image: "/images/projects/4.png",
+    image: "/images/projects/5.png",
     tag: ["Todos", "API"],
     gitUrl: "https://github.com/DenisCDev/API-RegistroDeComputadores",
     previewUrl: "https://github.com/DenisCDev/API-RegistroDeComputadores",

@@ -1,11 +1,12 @@
 "use client";
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Linguagens",
+    title: "Habilidades",
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
@@ -13,27 +14,11 @@ const TAB_DATA = [
         <li>CSS</li>
         <li>JavaScript</li>
         <li>Java</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Frameworks",
-    id: "skills-2",
-    content: (
-      <ul className="list-disc pl-2">
         <li>Node.js</li>
         <li>Express</li>
         <li>React</li>
         <li>Next.js</li>
         <li>Spring Boot</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Banco de Dados",
-    id: "skills-3",
-    content: (
-      <ul className="list-disc pl-2">
         <li>MySQL</li>
         <li>PostgreSQL</li>
         <li>MongoDB</li>
@@ -45,7 +30,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Universidade Cruzeiro do SUl Virtual</li>
+        <li>Universidade Cruzeiro do Sul Virtual</li>
       </ul>
     ),
   },
@@ -54,11 +39,11 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fundamentos do design da experiência do usuário UX - Google</li>
-        <li>Google Cloud Essentials - Google</li>
-        <li>Design Thinking, UX e Metodologias Ágeis - Nubank</li>
-        <li>Discover Trilha Conectar - Rocketseat</li>
-        <li>Desenvolvedor Back-end  - Tech4me</li>
+        <Link href='https://www.coursera.org/account/accomplishments/certificate/8GTWGD9JR77J' target="_blank" className="text-white hover:text-yellow-500"><li>Fundamentos do design da experiência do usuário UX - Google</li></Link>
+        <Link href='https://www.cloudskillsboost.google/public_profiles/18698d44-e14f-4338-b6b3-6e015b323d41/badges/1696274' target="_blank" className="text-white hover:text-yellow-500"><li>Google Cloud Essentials - Google</li></Link>
+        <Link href='https://empresas.descomplica.com.br/#/certificado/7e3cd356-2012-41f5-b715-a6af58e7b08a' target="_blank" className="text-white hover:text-yellow-500"><li>Design Thinking, UX e Metodologias Ágeis - Nubank</li></Link>
+        <Link href='https://drive.google.com/file/d/1P8PAad_ZuuSwVQUzEm1r04tOMSxQjVts/view' target="_blank" className="text-white hover:text-yellow-500"><li>Discover Trilha Conectar - Rocketseat</li></Link>
+        <Link href='https://drive.google.com/file/d/1ZChCvEEHDa_bgfFw091uZ7jau2ghUCk7/view' target="_blank" className="text-white hover:text-yellow-500"><li>Desenvolvedor Back-end  - Tech4me</li></Link>
       </ul>
     ),
   },
@@ -89,21 +74,7 @@ const AboutSection = () => {
               active={tab === "skills"}
             >
               {" "}
-              Linguagens{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("skills-2")}
-              active={tab === "skills-2"}
-            >
-              {" "}
-              Frameworks{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("skills-3")}
-              active={tab === "skills-3"}
-            >
-              {" "}
-              Banco de Dados{" "}
+              Habilidades{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
