@@ -2,13 +2,11 @@
 import React, { useState } from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import Link from "next/link";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 const EmailSection = () => {
   const [formData, setFormData] = useState({
     email: "",
-    subject: "", // Changed from 'assunto' to 'subject'
+    subject: "",
     message: "",
   });
 
@@ -32,22 +30,22 @@ const EmailSection = () => {
         body: JSON.stringify({
           email: formData.email,
           subject: formData.subject,
-          message: formData.message, 
+          message: formData.message,
         }),
       });
 
       if (response.ok) {
-        toast.success("Mensagem enviada com sucesso!");
+        alert("Mensagem enviada com sucesso!"); // Use alert for notification
         setFormData({
           email: "",
           subject: "",
           message: "",
         });
       } else {
-        toast.error("Erro ao enviar mensagem.");
+        alert("Erro ao enviar mensagem.");
       }
     } catch (error) {
-      toast.error(`Erro ao enviar mensagem: ${error.message}`);
+      alert(`Erro ao enviar mensagem: ${error.message}`);
     }
   };
 
@@ -111,7 +109,7 @@ const EmailSection = () => {
               value={formData.subject}
               onChange={handleInputChange}
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Apenas um contato"
+              placeholder="O assunto é..."
             />
           </div>
           <div className="mb-6">
