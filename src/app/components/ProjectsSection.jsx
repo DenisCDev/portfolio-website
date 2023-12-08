@@ -25,6 +25,15 @@ const projectsData = [
   },
   {
     id: 3,
+    title: "React List",
+    description: "Criador de lista usando react",
+    image: "/images/projects/4-1.png",
+    tag: ["Todos", "Web"],
+    gitUrl: "https://github.com/DenisCDev/ListaDePresencaReact",
+    previewUrl: "https://listapresencareact.netlify.app/",
+  },
+  {
+    id: 4,
     title: "API Node Express",
     description: "API de registro de personagens RPG",
     image: "/images/projects/4.png",
@@ -32,8 +41,8 @@ const projectsData = [
     gitUrl: "https://github.com/DenisCDev/nodejsexpress-api",
     previewUrl: "https://github.com/DenisCDev/nodejsexpress-api",
   },
-    {
-    id: 4,
+  {
+    id: 5,
     title: "API Java Spring Booot",
     description: "API de registro de computadores com especificação de peças",
     image: "/images/projects/5.png",
