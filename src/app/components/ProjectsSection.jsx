@@ -34,7 +34,7 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "API Node Express",
+    title: "API RPG Node Express",
     description: "API de registro de personagens RPG",
     image: "/images/projects/4.png",
     tag: ["Todos", "API"],
@@ -43,12 +43,21 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "API Java Spring Booot",
+    title: "API PC Java Spring Booot",
     description: "API de registro de computadores com especificação de peças",
     image: "/images/projects/5.png",
     tag: ["Todos", "API"],
     gitUrl: "https://github.com/DenisCDev/API-RegistroDeComputadores",
     previewUrl: "https://github.com/DenisCDev/API-RegistroDeComputadores",
+  },
+  {
+    id: 6,
+    title: "App React Native Aluguel de Carros",
+    description: "Aplicativo para aluguel de carros de luxo",
+    image: "/images/projects/6.png",
+    tag: ["Todos", "Mobile"],
+    gitUrl: "https://github.com/DenisCDev/reactnative-car-app",
+    previewUrl: "https://github.com/DenisCDev/reactnative-car-app",
   },
 ];
 
@@ -90,6 +99,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="API"
           isSelected={tag === "API"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Mobile"
+          isSelected={tag === "Mobile"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
