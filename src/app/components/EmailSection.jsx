@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaMedium } from 'react-icons/fa';
 import Link from "next/link";
 
 const EmailSection = () => {
@@ -71,6 +71,9 @@ const EmailSection = () => {
           </Link>
           <Link href="https://www.instagram.com/denis.desenvolvedor" target="_blank">
             <FaInstagram size={40} className="text-white hover:text-yellow-500" />
+          </Link>
+          <Link href="https://medium.com/@denisscarabelli5" target="_blank">
+            <FaMedium size={40} className="text-white hover:text-yellow-500" />
           </Link>
         </div>
       </div>
