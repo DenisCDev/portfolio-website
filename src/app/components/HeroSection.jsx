@@ -37,7 +37,9 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Meu objetivo é mudar o mundo através da tecnologia ajudando as pessoas e sempre me aprimorando
+            <blockquote>"A programação permite que você pense de forma clara, estruturada e lógica. Os grandes programadores não são apenas solucionadores de problemas; eles são criadores de possibilidades."
+              <cite> - Bill Gates</cite>
+            </blockquote>
           </p>
           <div>
             <Link

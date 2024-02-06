@@ -15,7 +15,6 @@ const TAB_DATA = [
         <li>JavaScript</li>
         <li>Java</li>
         <li>Node.js</li>
-        <li>Express</li>
         <li>React</li>
         <li>Next.js</li>
         <li>Spring Boot</li>
@@ -30,7 +29,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Universidade Cruzeiro do Sul Virtual</li>
+        <li>Ciência da Computação</li>
+        <em>Universidade Cruzeiro do Sul Virtual</em>
       </ul>
     ),
   },
@@ -66,7 +66,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">Sobre mim</h2>
           <p className="text-base lg:text-lg">
-          Sou um desenvolvedor especializado em front-end apaixonado pela criação de soluções inovadoras. Com uma formação em Ciência da Computação em andamento, busco constantemente aprimorar minhas habilidades técnicas e aplicá-las em projetos desafiadores. Tenho experiência em desenvolvimento web, com um histórico de modernização de sistemas legados e criação de soluções eficazes. Sou um comunicador eficiente e trabalho bem em equipes colaborativas. Estou sempre disposto a aprender e aberto a novos desafios.
+            Sou um desenvolvedor especializado em front-end apaixonado pela criação de soluções inovadoras. Com uma formação em Ciência da Computação em andamento, busco constantemente aprimorar minhas habilidades técnicas e aplicá-las em projetos desafiadores. Tenho experiência em desenvolvimento web, com um histórico de modernização de sistemas legados e criação de soluções eficazes. Sou um comunicador eficiente e trabalho bem em equipes colaborativas. Estou sempre disposto a aprender e aberto a novos desafios.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
