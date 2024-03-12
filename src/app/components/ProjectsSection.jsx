@@ -59,6 +59,15 @@ const projectsData = [
     gitUrl: "https://github.com/DenisCDev/reactnative-car-app",
     previewUrl: "https://github.com/DenisCDev/reactnative-car-app",
   },
+  {
+    id: 6,
+    title: "The Gym",
+    description: "Site de academia",
+    image: "/images/projects/7.png",
+    tag: ["Todos", "Web"],
+    gitUrl: "https://github.com/DenisCDev/the-gym",
+    previewUrl: "https://thegym-brasil.netlify.app/",
+  },
 ];
 
 const ProjectsSection = () => {
