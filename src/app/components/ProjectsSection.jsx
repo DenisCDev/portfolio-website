@@ -44,7 +44,7 @@ const projectsData = [
   {
     id: 5,
     title: "API PC Java Spring Booot",
-    description: "API de registro de computadores com especificação de peças",
+    description: "API Restful de registro de computadores com especificação de peças",
     image: "/images/projects/5.png",
     tag: ["Todos", "API"],
     gitUrl: "https://github.com/DenisCDev/API-RegistroDeComputadores",
@@ -67,6 +67,15 @@ const projectsData = [
     tag: ["Todos", "Web"],
     gitUrl: "https://github.com/DenisCDev/the-gym",
     previewUrl: "https://thegym-brasil.netlify.app/",
+  },
+  {
+    id: 7,
+    title: "Web API C# .NET",
+    description: "API de registro de funcionários com banco PostgreSQL",
+    image: "/images/projects/8.png",
+    tag: ["Todos", "Web", "API"],
+    gitUrl: "https://github.com/DenisCDev/web-api-dotnet",
+    previewUrl: "https://github.com/DenisCDev/web-api-dotnet",
   },
 ];
 
