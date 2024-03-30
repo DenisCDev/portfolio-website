@@ -14,11 +14,10 @@ const TAB_DATA = [
         <li>CSS</li>
         <li>JavaScript</li>
         <li>Java</li>
+        <li>C#</li>
         <li>Node.js</li>
         <li>React</li>
         <li>Next.js</li>
-        <li>Spring Boot</li>
-        <li>MySQL</li>
         <li>PostgreSQL</li>
         <li>MongoDB</li>
       </ul>
