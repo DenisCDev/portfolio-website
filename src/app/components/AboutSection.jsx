@@ -37,7 +37,6 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <Link href='https://www.coursera.org/account/accomplishments/certificate/8GTWGD9JR77J' target="_blank" className="text-white hover:text-yellow-500"><li>Fundamentos do design da experiência do usuário UX - Google</li></Link>
         <Link href='https://www.cloudskillsboost.google/public_profiles/18698d44-e14f-4338-b6b3-6e015b323d41/badges/1696274' target="_blank" className="text-white hover:text-yellow-500"><li>Google Cloud Essentials - Google</li></Link>
-        <Link href='https://app.rocketseat.com.br/certificates/92e75cb6-d0b8-49d4-b302-0c36a8f5e31e' target="_blank" className="text-white hover:text-yellow-500"><li>Desenvolvimento de uma Aplicação Back-end em C# com .NET</li></Link>
         <Link href='https://empresas.descomplica.com.br/#/certificado/7e3cd356-2012-41f5-b715-a6af58e7b08a' target="_blank" className="text-white hover:text-yellow-500"><li>Design Thinking, UX e Metodologias Ágeis - Nubank</li></Link>
         <Link href='https://drive.google.com/file/d/1P8PAad_ZuuSwVQUzEm1r04tOMSxQjVts/view' target="_blank" className="text-white hover:text-yellow-500"><li>Discover Trilha Conectar - Rocketseat</li></Link>
         <Link href='https://drive.google.com/file/d/1ZChCvEEHDa_bgfFw091uZ7jau2ghUCk7/view' target="_blank" className="text-white hover:text-yellow-500"><li>Desenvolvedor Back-end  - Tech4me</li></Link>
